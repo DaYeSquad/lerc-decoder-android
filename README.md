@@ -1,4 +1,4 @@
-#OVERVIEW
+# OVERVIEW
 
 A project demonstrates how to display lerc file as bitmap on Android
 

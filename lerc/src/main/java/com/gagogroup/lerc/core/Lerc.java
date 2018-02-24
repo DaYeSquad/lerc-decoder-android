@@ -56,5 +56,11 @@ public class Lerc {
         return nativeGetHeaderInfo(rawData);
     }
 
+    public static byte[] decode(byte[] rawData) {
+        return nativeDecode(rawData);
+    }
+
     private static native LercHeaderInfo nativeGetHeaderInfo(byte[] rawData);
+
+    private static native byte[] nativeDecode(byte[] rawData);
 }
