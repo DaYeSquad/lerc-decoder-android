@@ -30,8 +30,6 @@ Java_com_gagogroup_lerc_core_Lerc_nativeGetHeaderInfo(JNIEnv *env, jobject insta
   LercNS::Lerc::LercInfo headerInfo;
   LercNS::Lerc::GetLercInfo(lercData, static_cast<unsigned int>(len), headerInfo);
 
-  LOGE("%d", headerInfo.numValidPixel);
-
   jclass headerInfoJCls = env->FindClass("com/gagogroup/lerc/core/LercHeaderInfo");
   jmethodID constructor = env->GetMethodID(headerInfoJCls, "<init>", "(IIDDI)V");
 
